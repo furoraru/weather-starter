@@ -1,0 +1,12 @@
+{
+  "location": {
+    "name": "Moscow",
+    "region": "Moscow City",
+    "country": "Russia"
+  },
+  "current": {
+    "temp_c": 15.4,
+    "wind_kph": 13.0,
+    "humidity": 55.0
+  }
+}

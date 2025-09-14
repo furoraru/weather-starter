@@ -1,0 +1,12 @@
+{
+  "location": {
+    "name": "Kobe",
+    "region": "Hyogo",
+    "country": "Japan"
+  },
+  "current": {
+    "temp_c": 28.0,
+    "wind_kph": 13.0,
+    "humidity": 94.0
+  }
+}

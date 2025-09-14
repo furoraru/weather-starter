@@ -1,23 +1,20 @@
-package org.example.controllers;
+package org.example.controller;
 
-import org.example.services.WeatherService;
+import lombok.AllArgsConstructor;
+import org.example.model.WeatherDTO;
+import org.example.service.WeatherService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Map;
-
 @RestController
 @RequestMapping("/api/v1/weather")
+@AllArgsConstructor
 public class WeatherController {
     private final WeatherService weatherService;
 
-    public WeatherController(WeatherService weatherService) {
-        this.weatherService = weatherService;
-    }
-
     @GetMapping()
-    public Map.Entry<String, String> getWeatherByCity() {
-        return weatherService.getTemperature();
+    public WeatherDTO getWeatherByCity() {
+        return weatherService.getWeatherByCity();
     }
 }
