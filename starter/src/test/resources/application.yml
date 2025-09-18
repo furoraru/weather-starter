@@ -1,0 +1,8 @@
+weather:
+  apiKey: "test-api-key"
+  defaultCity: "Kobe"
+  baseUrl: "http://localhost:${wiremock.server.port}"
+
+wiremock:
+  server:
+    port: 8089
